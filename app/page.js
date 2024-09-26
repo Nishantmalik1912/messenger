@@ -26,6 +26,7 @@ const page = () => {
        <MessageCircle/>
          
         </div>
+        <div>lorem</div>
       </div>
     </>
   )
