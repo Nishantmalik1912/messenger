@@ -8,7 +8,7 @@ import Msgin from './msginterface/Msgin'
 
 
 const page = () => {
-  const[state , setState]=useState(false)
+  const[state , setState]=useState(true)
   let iff =<div id='msgin' className=' fixed flex justify-between border-2 h-full ' >
   <Msgin/> 
   </div>
@@ -26,7 +26,7 @@ const page = () => {
             <Navbar />
 
           </div>
-          <div className='mt-32' >
+          <div id='conDiv' className='mt-32' >
             <div onClick={()=>{setState(true)}} ><Contacts/></div>
             <div onClick={()=>{setState(true)}} ><Contacts/></div>
             <div onClick={()=>{setState(true)}} ><Contacts/></div>

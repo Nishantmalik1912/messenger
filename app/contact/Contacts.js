@@ -6,7 +6,7 @@ import React from 'react'
 const Contacts = () => {
   return (
     <>
-      <div className='px-10 py-5 h-25 hover:bg-slate-100 rounded-xl'>
+      <div id='msgin' className='px-10 py-5 h-25 hover:bg-slate-100 rounded-xl'>
 
         <div className='flex text-center'>
           <div className='rounded-full p-[6px] '>
@@ -23,7 +23,7 @@ const Contacts = () => {
 
         </div>
 
-        <div className='text-start ml-[50px] font-light w-4/5 '>
+        <div className='text-start mt-[-10px] ml-[50px] font-light w-4/5 '>
           <h1>Last message</h1>
         </div>
 

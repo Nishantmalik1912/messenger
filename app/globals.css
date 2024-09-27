@@ -13,7 +13,7 @@
 }
 
 #navbar{
-  width: 32.9%;
+  width: 33%;
 }
 #line{
   width: 2px;
@@ -21,6 +21,10 @@
 #msgbar{
   margin-top: auto;
 }
+#conDiv{
+  width: auto;
+}
 #msgin{
-  
+  width: auto;
+  height: auto;
 }
