@@ -5,6 +5,7 @@ import { Menu , Search } from 'lucide-react'
 
 
 const Navbar = () => {
+    let search = <Search/>
     return (
         <>
             <div > 
@@ -17,7 +18,7 @@ const Navbar = () => {
                 </div>
 
                 <div >
-                    <input id='search' className='border-slate-500 border-2 w-2/3 px-3 py-2 rounded-xl mb-5' placeholder={<Search/> + "Search"} />
+                    <input id='search' className='border-slate-500 border-2 w-2/3 px-3 py-2 rounded-xl mb-5' placeholder={search + "Search"} />
                 </div>
             </div>
 
