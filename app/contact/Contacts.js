@@ -14,7 +14,7 @@ const Contacts = () => {
           </div>
 
 
-          <div className='flex justify-between mx-1 w-4/5 '>
+          <div className='flex justify-between  mx-1 w-4/5 '>
 
             <h1 className='text-xl font-semibold'>Suryash</h1>
             <h1 className='font-extralight'>22:10</h1>
