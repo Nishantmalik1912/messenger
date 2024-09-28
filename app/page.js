@@ -8,43 +8,35 @@ import Msgin from './msginterface/Msgin'
 
 
 const page = () => {
-  const[state , setState]=useState(true)
-  let iff =<div id='msgin' className=' fixed flex justify-between border-2 h-full ' >
+  const onClick=()=>{
+    setState(true)
+  }
+  const[state , setState]=useState(false)
+  let iff =<div className=' fixed border-2 h-full ' >
   <Msgin/> 
   </div>
   let eelse = <div id='main' className='fixed flex justify-center items-center border-2 h-full' >
   <MessageCircle/> 
   </div>
   return (
-    <>
-      <div className='flex mx-4 '>
+    
+     <div className='flex justify-normal'>
+      <div id='top' className='w-1/3'>
+      <div><Navbar/></div>
 
-        <div id='sMain' className='  border-2'>
-          <div id='navbar' className='justify-center fixed w-1/3 bg-white text-center '>
-
-
-            <Navbar />
-
-          </div>
-          <div id='conDiv' className='mt-32' >
-            <div onClick={()=>{setState(true)}} ><Contacts/></div>
-            <div onClick={()=>{setState(true)}} ><Contacts/></div>
-            <div onClick={()=>{setState(true)}} ><Contacts/></div>
-            <div onClick={()=>{setState(true)}} ><Contacts/></div>
-            <div onClick={()=>{setState(true)}} ><Contacts/></div>
-            <div onClick={()=>{setState(true)}} ><Contacts/></div>
-            <div onClick={()=>{setState(true)}} ><Contacts/></div>
-            <div onClick={()=>{setState(true)}} ><Contacts/></div>
-            <div onClick={()=>{setState(true)}} ><Contacts/></div>
-         
-          </div>
-
-        </div>
-        <div className='w-2/3'>  { state==true ? iff : eelse}</div>
-       
-
+      <div id='down'>
+        <Contacts onClick={onClick} />
       </div>
-    </>
+      </div>
+       
+     <div className='w-2/3'>
+      {state == false ? eelse : iff}
+     </div>
+
+
+
+     </div>
+    
   )
 }
 

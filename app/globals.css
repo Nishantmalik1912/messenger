@@ -12,19 +12,37 @@
   width: 33.8%;
 }
 
-#navbar{
-  width: 33%;
+
+
+#Ticon{
+  stroke-width: 1px;
 }
-#line{
-  width: 2px;
+
+#header{
+width: 68%;
 }
-#msgbar{
-  margin-top: auto;
-}
-#conDiv{
-  width: auto;
-}
-#msgin{
-  width: auto;
-  height: auto;
-}
+  #search{
+  padding-left: 20%;
+  padding-bottom:1% ;
+  }
+  #Ticon{
+    stroke-width:1px;
+  }
+  
+  input{
+    outline: none;
+  }
+  #search{
+  padding-left: 20%;
+  padding-bottom:1% ;
+  }
+  #top{
+    z-index: 1;
+  }
+  #down{
+    z-index: 0;
+    margin-top: 130px;
+  }
+  #inPut{
+    width: 54%;
+  }

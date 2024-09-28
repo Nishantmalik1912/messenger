@@ -3,31 +3,21 @@ import Image from 'next/image'
 import React from 'react'
 
 
-const Contacts = () => {
+const Contacts = (props) => {
   return (
     <>
-      <div id='msgin' className='px-10 py-5 h-25 hover:bg-slate-100 rounded-xl'>
-
-        <div className='flex text-center'>
-          <div className='rounded-full p-[6px] '>
-            <Image src='/app/image/flower.jpg' width='30' height='30' />
-          </div>
-
-
-          <div className='flex justify-between  mx-1 w-4/5 '>
-
-            <h1 className='text-xl font-semibold'>Suryash</h1>
-            <h1 className='font-extralight'>22:10</h1>
-
-          </div>
-
+       <div onClick={props.onClick} className='flex w-full p-10 justify-between items-center h-20 hover:bg-zinc-200'>
+            <div className='flex justify-normal items-center'>
+                <div className='mr-3'>
+                    <Image src='' width={20} height={20} />
+                </div>
+                <div>
+                    <h1 className='text-xl font-medium '>Name</h1>
+                    <h2>Last message</h2>
+                </div>
+            </div>
+            <div><h2 className='font-extralight '>time of the last msg send</h2></div>
         </div>
-
-        <div className='text-start mt-[-10px] ml-[50px] font-light w-4/5 '>
-          <h1>Last message</h1>
-        </div>
-
-      </div>
     </>
   )
 }

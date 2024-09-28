@@ -1,32 +1,31 @@
 "use client"
 import React from 'react'
-import { Menu , Search, SearchCheck } from 'lucide-react'
+import { ListFilter, SquarePen } from 'lucide-react'
 
 
 
 const Navbar = () => {
-    let search = <Search/> + "search"
+
     return (
-        <>
-            <div> 
-                <div className='flex text-center px-10 py-5 border-slate-950 rounded-xl justify-between'>
-                <h1 className='text-black font-medium text-2xl'>Chats</h1>
-
-                <div>
-                    <Menu className='text-black' />
+     
+            <div className=' fixed w-1/3 items-center bg-white top-0'>
+                <div className=' flex w-full justify-between px-10 py-5'>
+                    <h1 className='text-2xl font-semibold'>Chat</h1>
+                    <div className='flex justify-between '>
+                        <SquarePen id='Ticon' className='mx-4' />
+                        <ListFilter id='Ticon' />
+                    </div>
                 </div>
-                </div>
 
-                <div >
-                    <input id='search' className='border-slate-500 border-2 w-2/3 px-3 py-2 rounded-xl mb-5' placeholder={search}/>
+                <div id='search' className=' w-full' >
+                    <input type='text' className='w-4/5 py-2 px-3 border-[1px] rounded-md ' placeholder='Search' />
                 </div>
             </div>
 
 
 
 
-
-        </>
+      
     )
 }
 
