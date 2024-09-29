@@ -19,8 +19,16 @@
 }
 
 #header{
-width: 68%;
+width: 65%;
 }
+#footer{
+width:96%;
+}
+
+
+
+
+
   #search{
   padding-left: 20%;
   padding-bottom:1% ;
@@ -46,3 +54,7 @@ width: 68%;
   #inPut{
     width: 54%;
   }
+
+ #Sdiv{
+  width:3%;
+ }

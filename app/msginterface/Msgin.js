@@ -7,13 +7,13 @@ const Msgin = () => {
   return (
 
     <div id='main' >
-      <div id='header' className='fixed h-1/6 items-center flex justify-between p-10'>
+      <div id='header' className='fixed items-center flex justify-between p-10'>
 
         <div className='flex items-center'>
           <div>
             <Image src='' width={20} height={20} />
           </div>
-          <div>
+          <div className='mx-3'>
             <h1 className='font-semibold text-2xl'>Name</h1> <h2>time of the last seen</h2>
           </div>
         </div>
@@ -28,10 +28,10 @@ const Msgin = () => {
 
       </div>
       <div className=''>
-
+       
       </div>
 
-      <div className=' fixed flex items-center px-10 py-5 w-full h-20 bottom-0'>
+      <div id='footer' className=' fixed flex items-center px-10 py-5 h-20 bottom-0'>
         <Smile id='Ticon' className='mx-3' /> <Paperclip id='Ticon' className='mx-3' />
         <input id='inPut' type='text' placeholder='message' className='px-3 py-3 ml-4 border-none' />
         <Send id='Ticon' className='mx-3' />
