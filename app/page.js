@@ -5,6 +5,7 @@ import Navbar from './navbar/Navbar'
 import Contacts from './contact/Contacts'
 import Msgin from './msginterface/Msgin'
 import Sidediv from './sideDiv/Sidediv'
+import CallDiv from './callDiv/CallDiv'
 
 
 
@@ -13,6 +14,7 @@ const page = () => {
     setState(true)
   }
   const [state, setState] = useState(false)
+  const [call, setCall] = useState(0)
   let iff = <div className=' fixed border-2 h-full ' >
     <Msgin />
   </div>
@@ -23,9 +25,9 @@ const page = () => {
 
     <div className='flex justify-normal'>
       <div id='Sdiv' className='border-2'>
-       <Sidediv/>
+        <Sidediv onClick={()=>setCall(1) }/>
       </div>
-      <div id='top' className='w-2/6'>
+      {call == 1 ? <div id='top' className='w-2/6'> <CallDiv/> </div> : <div id='top' className='w-2/6'>
         <div><Navbar /></div>
 
         <div id='down'>
@@ -41,7 +43,7 @@ const page = () => {
           <Contacts onClick={onClick} />
           <Contacts onClick={onClick} />
         </div>
-      </div>
+      </div>}
 
       <div className='w-3/6'>
         {state == false ? eelse : iff}

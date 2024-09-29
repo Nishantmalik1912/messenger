@@ -2,14 +2,13 @@ import { Menu, MessageCircle, MessageCircleMore, Phone, Settings } from 'lucide-
 import Image from 'next/image'
 import React from 'react'
 
-const Sidediv = () => {
+const Sidediv = (props) => {
   return (
    <div className='fixed'>
-      <div className='mb-20'>
-        <div className='flex justify-center p-2 hover:bg-slate-200 '> <MessageCircle /></div>
-        <div className='flex justify-center p-2 hover:bg-slate-200 ' ><Menu id='Ticon' /></div>
+      <div className='mb-20 mt-20'>
+
         <div className='flex justify-center p-2 hover:bg-slate-200 ' ><MessageCircleMore id='Ticon' /></div>
-        <div className='flex justify-center p-2 hover:bg-slate-200 ' ><Phone id='Ticon' /></div>
+        <div className='flex justify-center p-2 hover:bg-slate-200 ' ><Phone onClick={props.onClick} id='Ticon' /></div>
       </div>
      
 
